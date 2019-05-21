@@ -1,6 +1,6 @@
 {
-  "name": "twitbot",
-  "version": "0.0.1",
+  "name": "twitter-bot",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "react": "16.8.3",
-    "react-native": "0.59.8"
+    "react-native": "0.59.8",
+    "twitter": "^1.7.1"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
@@ -20,5 +21,17 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "description": "Nodejs Twitter Bot",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masonG18/twitbot.git"
+  },
+  "author": "Mason Gruener",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masonG18/twitbot/issues"
+  },
+  "homepage": "https://github.com/masonG18/twitbot#readme"
 }
