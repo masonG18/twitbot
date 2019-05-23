@@ -39,3 +39,24 @@ T.get('search/tweets', params, function(err, data, response) {
 		console.log(err);
 	}
 });
+
+
+
+var tweetId = 'masong18';
+
+client.post('statuses/retweet/' + tweetId, function(err, tweet, response) {
+	if(!err) {
+		console.log(tweet);
+	}
+});
+
+var params = {
+	q: 'berniesanders',
+	count: 20,
+	result_type: 'recent',
+	lang: 'en'
+}
+
+client.get('search/tweets', params, function(err, tweets, response) {
+	console.log(tweets);
+});
